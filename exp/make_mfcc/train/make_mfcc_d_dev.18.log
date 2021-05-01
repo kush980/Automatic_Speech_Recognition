@@ -1,0 +1,12 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.18 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_d_dev.18.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.18 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.18.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.18.scp 
+# Started at Sat May  1 14:21:34 IST 2021
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.18 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.18.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.18.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.18 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_d_dev.18.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key ramakrishna_t02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key ramakrishna_t03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key ramakrishna_t04
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:185)  Done 3 out of 3 utterances.
+LOG (copy-feats[5.5.916~1-7f57e]:main():copy-feats.cc:143) Copied 3 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat May  1 14:21:34 IST 2021, elapsed time 0 seconds
