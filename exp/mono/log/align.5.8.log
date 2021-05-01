@@ -1,0 +1,122 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono/5.mdl - |" "ark:gunzip -c exp/mono/fsts.8.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/8/utt2spk scp:data/train/d_dev//split10/8/cmvn.scp scp:data/train/d_dev//split10/8/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.8.gz" 
+# Started at Sat May  1 16:02:17 IST 2021
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono/5.mdl - |' 'ark:gunzip -c exp/mono/fsts.8.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/8/utt2spk scp:data/train/d_dev//split10/8/cmvn.scp scp:data/train/d_dev//split10/8/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.8.gz' 
+gmm-boost-silence --boost=1.0 1 exp/mono/5.mdl - 
+WARNING (gmm-boost-silence[5.5.916~1-7f57e]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.5.916~1-7f57e]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.5.916~1-7f57e]:main():gmm-boost-silence.cc:103) Wrote model to -
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/d_dev//split10/8/utt2spk scp:data/train/d_dev//split10/8/cmvn.scp scp:data/train/d_dev//split10/8/feats.scp ark:- 
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance gangamohan_m10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance hari_h10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance knrk_k10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance malavika_a10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance mounika_b10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance ramakrishna_t10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance rambabu_r10
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance samyukta_s01 with beam 40
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s02
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s03
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s04
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance samyukta_s05 with beam 40
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance samyukta_s06 with beam 40
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s07
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance samyukta_s08 with beam 40
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance samyukta_s09 with beam 40
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:127) samyukta_s10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance samyukta_s10 with beam 40
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance shivanand_c10
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d01
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d02
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d03
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d04
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d05
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d06
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d07
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d08
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d09
+WARNING (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:103) No features for utterance sonali_d10
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -102.656 over 2902 frames.
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:137) Retried 6 out of 100 utterances.
+LOG (gmm-align-compiled[5.5.916~1-7f57e]:main():gmm-align-compiled.cc:139) Done 10, errors on 90
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat May  1 16:02:18 IST 2021, elapsed time 1 seconds
