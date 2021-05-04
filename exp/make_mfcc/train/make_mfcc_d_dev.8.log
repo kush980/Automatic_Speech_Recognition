@@ -1,12 +1,20 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.8 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_d_dev.8.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.8 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.8.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.8.scp 
-# Started at Sat May  1 14:21:32 IST 2021
+# Started at Tue May  4 13:43:53 IST 2021
 #
 copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.8 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.8.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.8.scp 
 compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.8 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_d_dev.8.scp ark:- 
-VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k02
-VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k03
-VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k04
-LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:185)  Done 3 out of 3 utterances.
-LOG (copy-feats[5.5.916~1-7f57e]:main():copy-feats.cc:143) Copied 3 feature matrices.
-# Accounting: time=2 threads=1
-# Ended (code 0) at Sat May  1 14:21:34 IST 2021, elapsed time 2 seconds
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s01
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s04
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s05
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s06
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s07
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s08
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s09
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key samyukta_s10
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:185)  Done 10 out of 10 utterances.
+LOG (copy-feats[5.5.916~1-7f57e]:main():copy-feats.cc:143) Copied 10 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue May  4 13:43:53 IST 2021, elapsed time 0 seconds

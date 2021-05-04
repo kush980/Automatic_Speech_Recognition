@@ -24,10 +24,10 @@ WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tr
 ASSERTION_FAILED (cluster-phones[5.5.916~1-7f57e]:ObtainSetsOfPhones():build-tree.cc:567) Assertion failed: (num_leaves < static_cast<int32>(clust_assignments.size()))
 
 [ Stack-Trace: ]
-/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xb42) [0x7ff104d766f2]
-/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::KaldiAssertFailure_(char const*, char const*, int, char const*)+0x6e) [0x7ff104d773ee]
-/home/kritika/kaldi/src/lib/libkaldi-tree.so(kaldi::AutomaticallyObtainQuestions(std::vector<std::pair<std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, kaldi::Clusterable*>, std::allocator<std::pair<std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, kaldi::Clusterable*> > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, std::vector<int, std::allocator<int> > const&, int, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >*)+0x22ef) [0x7ff10549fd1d]
-cluster-phones(main+0x5a7) [0x56327c08f8c1]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ff1043ffbf7]
-cluster-phones(_start+0x2a) [0x56327c08f23a]
+/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xb42) [0x7f1a04f4d6f2]
+/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::KaldiAssertFailure_(char const*, char const*, int, char const*)+0x6e) [0x7f1a04f4e3ee]
+/home/kritika/kaldi/src/lib/libkaldi-tree.so(kaldi::AutomaticallyObtainQuestions(std::vector<std::pair<std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, kaldi::Clusterable*>, std::allocator<std::pair<std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, kaldi::Clusterable*> > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, std::vector<int, std::allocator<int> > const&, int, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >*)+0x22ef) [0x7f1a05676d1d]
+cluster-phones(main+0x5a7) [0x557ef83728c1]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f1a045d6bf7]
+cluster-phones(_start+0x2a) [0x557ef837223a]
 

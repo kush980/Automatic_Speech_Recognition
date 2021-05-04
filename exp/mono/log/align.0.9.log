@@ -1,107 +1,17 @@
-# align-equal-compiled "ark:gunzip -c exp/mono/fsts.9.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/9/utt2spk scp:data/train/d_dev/split10/9/cmvn.scp scp:data/train/d_dev/split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/9/utt2spk scp:data/train/d_dev/split10/9/cmvn.scp scp:data/train/d_dev/split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.9.acc 
-# Started at Tue May  4 10:52:41 IST 2021
+# align-equal-compiled "ark:gunzip -c exp/mono/fsts.9.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/9/utt2spk scp:data/train/d_dev//split10/9/cmvn.scp scp:data/train/d_dev//split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/9/utt2spk scp:data/train/d_dev//split10/9/cmvn.scp scp:data/train/d_dev//split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.9.acc 
+# Started at Tue May  4 13:51:44 IST 2021
 #
-gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/9/utt2spk scp:data/train/d_dev/split10/9/cmvn.scp scp:data/train/d_dev/split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.9.acc 
-align-equal-compiled 'ark:gunzip -c exp/mono/fsts.9.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/9/utt2spk scp:data/train/d_dev/split10/9/cmvn.scp scp:data/train/d_dev/split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
-apply-cmvn --utt2spk=ark:data/train/d_dev/split10/9/utt2spk scp:data/train/d_dev/split10/9/cmvn.scp scp:data/train/d_dev/split10/9/feats.scp ark:- 
+align-equal-compiled 'ark:gunzip -c exp/mono/fsts.9.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/9/utt2spk scp:data/train/d_dev//split10/9/cmvn.scp scp:data/train/d_dev//split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/9/utt2spk scp:data/train/d_dev//split10/9/cmvn.scp scp:data/train/d_dev//split10/9/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.9.acc 
 add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/d_dev//split10/9/utt2spk scp:data/train/d_dev//split10/9/cmvn.scp scp:data/train/d_dev//split10/9/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/train/d_dev//split10/9/utt2spk scp:data/train/d_dev//split10/9/cmvn.scp scp:data/train/d_dev//split10/9/feats.scp ark:- 
 add-deltas ark:- ark:- 
-apply-cmvn --utt2spk=ark:data/train/d_dev/split10/9/utt2spk scp:data/train/d_dev/split10/9/cmvn.scp scp:data/train/d_dev/split10/9/feats.scp ark:- 
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance hari_h10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance knrk_k10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance mounika_b10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance rambabu_r10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s10
 LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d01
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d02
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d03
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d04
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d05
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d06
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d07
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d08
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d09
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d10
-WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:109) Computed 10 alignments; 90 lacked features, 0 had other errors.
+LOG (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:107) Success: done 10 utterances.
 LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
 LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:112) Done 10 files, 0 with errors.
-LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -92.3634 over 22984 frames.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -92.3708 over 22984 frames.
 LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:123) Written accs.
 # Accounting: time=0 threads=1
-# Ended (code 0) at Tue May  4 10:52:41 IST 2021, elapsed time 0 seconds
+# Ended (code 0) at Tue May  4 13:51:44 IST 2021, elapsed time 0 seconds
