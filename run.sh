@@ -27,9 +27,9 @@ decode=true  # set to false to disable the decoding-related scripts.
 #wsj1=/export/corpora5/LDC/LDC94S13B
 
 
-if [ $stage -le 0 ]; then
+#if [ $stage -le 0 ]; then
   # data preparation.
-  local/wsj_data_prep.sh $wsj0/??-{?,??}.? $wsj1/??-{?,??}.?  || exit 1;
+#  local/wsj_data_prep.sh $wsj0/??-{?,??}.? $wsj1/??-{?,??}.?  || exit 1;
 
   # Sometimes, we have seen WSJ distributions that do not have subdirectories
   # like '11-13.1', but instead have 'doc', 'si_et_05', etc. directly under the
@@ -42,12 +42,12 @@ if [ $stage -le 0 ]; then
   #
   # "nosp" refers to the dictionary before silence probabilities and pronunciation
   # probabilities are added.
-  local/wsj_prepare_dict.sh --dict-suffix "_nosp" || exit 1;
+#  local/wsj_prepare_dict.sh --dict-suffix "_nosp" || exit 1;
 
-  utils/prepare_lang.sh data/local/dict_nosp \
-                        "<SPOKEN_NOISE>" data/local/lang_tmp_nosp data/lang_nosp || exit 1;
+#  utils/prepare_lang.sh data/local/dict_nosp \
+#                        "<SPOKEN_NOISE>" data/local/lang_tmp_nosp data/lang_nosp || exit 1;
 
-  local/wsj_format_data.sh --lang-suffix "_nosp" || exit 1;
+#  local/wsj_format_data.sh --lang-suffix "_nosp" || exit 1;
 
   # We suggest to run the next three commands in the background,
   # as they are not a precondition for the system building and
@@ -59,31 +59,31 @@ if [ $stage -le 0 ]; then
   # is setup to use qsub.  Else, just remove the --cmd option.
   # NOTE: If you have a setup corresponding to the older cstr_wsj_data_prep.sh style,
   # use local/cstr_wsj_extend_dict.sh --dict-suffix "_nosp" $corpus/wsj1/doc/ instead.
-  (
-    local/wsj_extend_dict.sh --dict-suffix "_nosp" $wsj1/13-32.1  && \
-      utils/prepare_lang.sh data/local/dict_nosp_larger \
-                            "<SPOKEN_NOISE>" data/local/lang_tmp_nosp_larger data/lang_nosp_bd && \
-      local/wsj_train_lms.sh --dict-suffix "_nosp" &&
-      local/wsj_format_local_lms.sh --lang-suffix "_nosp" # &&
-  ) &
+ # (
+ #   local/wsj_extend_dict.sh --dict-suffix "_nosp" $wsj1/13-32.1  && \
+ #     utils/prepare_lang.sh data/local/dict_nosp_larger \
+ #                           "<SPOKEN_NOISE>" data/local/lang_tmp_nosp_larger data/lang_nosp_bd && \
+ #     local/wsj_train_lms.sh --dict-suffix "_nosp" &&
+ #     local/wsj_format_local_lms.sh --lang-suffix "_nosp" # &&
+ # ) &
 
   # Now make MFCC features.
   # mfccdir should be some place with a largish disk where you
   # want to store MFCC features.
 
-  for x in test_eval92 test_eval93 test_dev93 train_si284; do
-    steps/make_mfcc.sh --cmd "$train_cmd" --nj 20 data/$x || exit 1;
-    steps/compute_cmvn_stats.sh data/$x || exit 1;
-  done
+ # for x in test_eval92 test_eval93 test_dev93 train_si284; do
+ #   steps/make_mfcc.sh --cmd "$train_cmd" --nj 20 data/$x || exit 1;
+ #   steps/compute_cmvn_stats.sh data/$x || exit 1;
+ # done
 
-  utils/subset_data_dir.sh --first data/train_si284 7138 data/train_si84 || exit 1
+ # utils/subset_data_dir.sh --first data/train_si284 7138 data/train_si84 || exit 1
 
   # Now make subset with the shortest 2k utterances from si-84.
-  utils/subset_data_dir.sh --shortest data/train_si84 2000 data/train_si84_2kshort || exit 1;
+ # utils/subset_data_dir.sh --shortest data/train_si84 2000 data/train_si84_2kshort || exit 1;
 
   # Now make subset with half of the data from si-84.
-  utils/subset_data_dir.sh data/train_si84 3500 data/train_si84_half || exit 1;
-fi
+ # utils/subset_data_dir.sh data/train_si84 3500 data/train_si84_half || exit 1;
+#fi
 
 
 if [ $stage -le 1 ]; then
@@ -95,7 +95,7 @@ if [ $stage -le 1 ]; then
   # models from modeling silence.]
   if $train; then
     steps/train_mono.sh --boost-silence 1.25 --nj 10 --cmd "$train_cmd" \
-      data/train_si84_2kshort data/lang_nosp exp/mono0a || exit 1;
+      data/train/d_dev data/lang exp/mono || exit 1;
   fi
 
   if $decode; then
@@ -111,10 +111,10 @@ if [ $stage -le 2 ]; then
   # tri1
   if $train; then
     steps/align_si.sh --boost-silence 1.25 --nj 10 --cmd "$train_cmd" \
-      data/train_si84_half data/lang_nosp exp/mono0a exp/mono0a_ali || exit 1;
+      data/train/d_dev data/lang exp/mono exp/mono_ali || exit 1;
 
     steps/train_deltas.sh --boost-silence 1.25 --cmd "$train_cmd" 2000 10000 \
-      data/train_si84_half data/lang_nosp exp/mono0a_ali exp/tri1 || exit 1;
+      data/train/d_dev data/lang exp/mono_ali exp/tri1 || exit 1;
   fi
 
   if $decode; then

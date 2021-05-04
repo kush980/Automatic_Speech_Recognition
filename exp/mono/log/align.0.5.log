@@ -1,12 +1,12 @@
-# align-equal-compiled "ark:gunzip -c exp/mono/fsts.5.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/5/utt2spk scp:data/train/d_dev//split10/5/cmvn.scp scp:data/train/d_dev//split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/5/utt2spk scp:data/train/d_dev//split10/5/cmvn.scp scp:data/train/d_dev//split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.5.acc 
-# Started at Sat May  1 16:02:13 IST 2021
+# align-equal-compiled "ark:gunzip -c exp/mono/fsts.5.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/5/utt2spk scp:data/train/d_dev/split10/5/cmvn.scp scp:data/train/d_dev/split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/5/utt2spk scp:data/train/d_dev/split10/5/cmvn.scp scp:data/train/d_dev/split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.5.acc 
+# Started at Tue May  4 10:52:41 IST 2021
 #
-align-equal-compiled 'ark:gunzip -c exp/mono/fsts.5.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/5/utt2spk scp:data/train/d_dev//split10/5/cmvn.scp scp:data/train/d_dev//split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
-gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev//split10/5/utt2spk scp:data/train/d_dev//split10/5/cmvn.scp scp:data/train/d_dev//split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.5.acc 
+align-equal-compiled 'ark:gunzip -c exp/mono/fsts.5.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/5/utt2spk scp:data/train/d_dev/split10/5/cmvn.scp scp:data/train/d_dev/split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/d_dev/split10/5/utt2spk scp:data/train/d_dev/split10/5/cmvn.scp scp:data/train/d_dev/split10/5/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.5.acc 
 add-deltas ark:- ark:- 
-apply-cmvn --utt2spk=ark:data/train/d_dev//split10/5/utt2spk scp:data/train/d_dev//split10/5/cmvn.scp scp:data/train/d_dev//split10/5/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/train/d_dev/split10/5/utt2spk scp:data/train/d_dev/split10/5/cmvn.scp scp:data/train/d_dev/split10/5/feats.scp ark:- 
 add-deltas ark:- ark:- 
-apply-cmvn --utt2spk=ark:data/train/d_dev//split10/5/utt2spk scp:data/train/d_dev//split10/5/cmvn.scp scp:data/train/d_dev//split10/5/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/train/d_dev/split10/5/utt2spk scp:data/train/d_dev/split10/5/cmvn.scp scp:data/train/d_dev/split10/5/feats.scp ark:- 
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m01
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m02
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance gangamohan_m03
@@ -48,6 +48,10 @@ WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a09
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance malavika_a10
 LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:112) Done 10 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -110.562 over 2966 frames.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:123) Written accs.
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t01
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t02
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance ramakrishna_t03
@@ -77,7 +81,6 @@ WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s07
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s08
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s09
-LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance samyukta_s10
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance shivanand_c01
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance shivanand_c02
@@ -93,10 +96,7 @@ WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d02
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d03
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d04
-LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:112) Done 10 files, 0 with errors.
-LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -110.562 over 2966 frames.
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d05
-LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:123) Written accs.
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d06
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d07
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d08
@@ -104,4 +104,4 @@ WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:69) No features for utterance sonali_d10
 WARNING (align-equal-compiled[5.5.916~1-7f57e]:main():align-equal-compiled.cc:109) Computed 10 alignments; 90 lacked features, 0 had other errors.
 # Accounting: time=0 threads=1
-# Ended (code 0) at Sat May  1 16:02:13 IST 2021, elapsed time 0 seconds
+# Ended (code 0) at Tue May  4 10:52:41 IST 2021, elapsed time 0 seconds
