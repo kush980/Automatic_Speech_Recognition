@@ -1,0 +1,7 @@
+# sum-tree-stats exp/tri2b/treeacc exp/tri2b/1.treeacc 
+# Started at Sat May  8 21:54:32 IST 2021
+#
+sum-tree-stats exp/tri2b/treeacc exp/tri2b/1.treeacc 
+LOG (sum-tree-stats[5.5.916~1-7f57e]:main():sum-tree-stats.cc:88) Wrote summed accs ( 407 individual stats)
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat May  8 21:54:32 IST 2021, elapsed time 0 seconds

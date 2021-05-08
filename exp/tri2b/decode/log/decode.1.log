@@ -1,0 +1,95 @@
+# gmm-latgen-faster --max-active=7000 --beam=18.0 --lattice-beam=10.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2b/graph/words.txt exp/tri2b/final.mdl exp/tri2b/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri2b/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri2b/decode/lat.1.gz" 
+# Started at Sat May  8 21:56:53 IST 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=18.0 --lattice-beam=10.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2b/graph/words.txt exp/tri2b/final.mdl exp/tri2b/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri2b/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri2b/decode/lat.1.gz' 
+transform-feats exp/tri2b/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+sravya_w01 ZERO ONE TWO TWO FOUR FIVE SIX SEVEN EIGHT NINE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w01 is -5.34126 over 290 frames.
+sravya_w02 TWO THREE FIVE SEVEN NINE ZERO SIX EIGHT TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w02 is -5.46238 over 267 frames.
+sravya_w03 ZERO TWO FOUR SIX ZERO FIVE NINE SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w03 is -5.53241 over 276 frames.
+sravya_w04 ONE FIVE NINE TWO FOUR FOUR ZERO SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w04 is -5.5361 over 265 frames.
+sravya_w05 ONE THREE FIVE SIX ZERO EIGHT NINE TWO EIGHT 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w05 is -5.56493 over 266 frames.
+sravya_w06 TWO THREE NINE FOUR TWO FOUR FIVE ZERO SEVEN SIX EIGHT 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w06 is -5.75925 over 335 frames.
+sravya_w07 ONE THREE TWO FOUR FIVE THREE ZERO SIX NINE EIGHT SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w07 is -5.4872 over 390 frames.
+sravya_w08 TWO THREE FIVE FOUR EIGHT SEVEN NINE SIX ONE ZERO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w08 is -5.47624 over 341 frames.
+sravya_w09 ONE EIGHT SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w09 is -5.42675 over 424 frames.
+sravya_w10 THREE FOUR EIGHT ONE ZERO EIGHT SEVEN SIX FOUR THREE FIVE EIGHT NINE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sravya_w10 is -5.26328 over 499 frames.
+sudharshan_x01 ZERO ONE TWO THREE FOUR FIVE SIX SEVEN NINE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x01 is -5.47179 over 461 frames.
+sudharshan_x02 ONE THREE FIVE SEVEN NINE ZERO SIX SIX TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x02 is -5.40669 over 370 frames.
+sudharshan_x03 ZERO TWO FOUR SIX FIVE NINE SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x03 is -5.25118 over 435 frames.
+sudharshan_x04 ONE FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x04 is -5.05274 over 383 frames.
+sudharshan_x05 ONE THREE FIVE SIX ZERO EIGHT NINE TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x05 is -5.09024 over 409 frames.
+sudharshan_x06 TWO THREE NINE FOUR TWO FOUR FIVE ZERO SIX SIX 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x06 is -5.03501 over 562 frames.
+sudharshan_x07 ONE THREE TWO FOUR FIVE THREE ZERO SIX NINE EIGHT SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x07 is -5.08805 over 519 frames.
+sudharshan_x08 TWO THREE FIVE FOUR EIGHT SEVEN NINE SIX ONE ZERO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x08 is -5.26514 over 477 frames.
+sudharshan_x09 NINE SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x09 is -5.49932 over 500 frames.
+sudharshan_x10 THREE FOUR ONE ZERO EIGHT SEVEN SIX FOUR THREE FIVE EIGHT NINE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance sudharshan_x10 is -5.0581 over 536 frames.
+swetha_y01 ZERO ONE THREE FOUR FIVE SIX SEVEN EIGHT NINE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y01 is -5.23401 over 230 frames.
+swetha_y02 ONE THREE FIVE SEVEN NINE ZERO SIX EIGHT TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y02 is -5.08368 over 220 frames.
+swetha_y03 ZERO TWO FOUR SIX EIGHT NINE SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y03 is -5.09653 over 227 frames.
+swetha_y04 FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y04 is -5.14349 over 208 frames.
+swetha_y05 ONE THREE FIVE SIX ZERO EIGHT EIGHT TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y05 is -5.24184 over 189 frames.
+swetha_y06 TWO THREE NINE FOUR TWO FOUR FIVE ZERO ONE SIX EIGHT 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y06 is -4.87254 over 362 frames.
+swetha_y07 FIVE THREE TWO FOUR FIVE THREE ZERO SIX NINE EIGHT SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y07 is -5.13468 over 247 frames.
+swetha_y08 TWO THREE FIVE FOUR EIGHT SEVEN NINE SIX ONE SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y08 is -5.13721 over 246 frames.
+swetha_y09 NINE EIGHT SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y09 is -5.33586 over 258 frames.
+swetha_y10 THREE FOUR ONE EIGHT SEVEN SIX FOUR THREE NINE EIGHT 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance swetha_y10 is -5.22129 over 251 frames.
+vvraju_z01 ZERO TWO THREE FOUR FOUR FIVE SIX SEVEN EIGHT NINE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z01 is -6.1125 over 476 frames.
+vvraju_z02 ONE THREE FOUR FIVE SEVEN NINE ZERO SIX EIGHT TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z02 is -5.90098 over 385 frames.
+vvraju_z03 ZERO TWO FOUR SIX EIGHT FIVE NINE SEVEN ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z03 is -6.22219 over 374 frames.
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 40 utterances, errors on 0
+vvraju_z04 ONE FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z04 is -6.03111 over 340 frames.
+vvraju_z05 ONE THREE FOUR FIVE SIX ZERO EIGHT NINE TWO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z05 is -6.02622 over 322 frames.
+vvraju_z06 TWO THREE NINE FOUR TWO FOUR FOUR FIVE ZERO SEVEN SIX THREE EIGHT 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z06 is -6.14751 over 432 frames.
+vvraju_z07 ONE THREE TWO FOUR FOUR FIVE THREE SIX TWO SIX NINE EIGHT SEVEN 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z07 is -6.07316 over 442 frames.
+vvraju_z08 TWO THREE TWO FIVE FOUR EIGHT SEVEN NINE SIX ONE ZERO 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z08 is -5.7962 over 400 frames.
+vvraju_z09 NINE EIGHT SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN EIGHT ONE 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z09 is -6.07439 over 458 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -69.7531 over 14511 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 40 utterances; 0 had errors.
+vvraju_z10 THREE FOUR FOUR ONE ZERO THREE SEVEN SIX FOUR THREE FIVE EIGHT NINE EIGHT 
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance vvraju_z10 is -6.16405 over 439 frames.
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:main():gmm-latgen-faster.cc:176) Time taken 2.60338s: real-time factor assuming 100 frames/sec is 0.0179407
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:main():gmm-latgen-faster.cc:179) Done 40 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.916~1-7f57e]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -5.49802 over 14511 frames.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Sat May  8 21:56:56 IST 2021, elapsed time 3 seconds

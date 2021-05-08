@@ -1,0 +1,160 @@
+sravya_w01 ref  ZERO  ONE  TWO  THREE  FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+sravya_w01 hyp  ZERO  ONE  TWO   TWO   FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+sravya_w01 op     C    C    C     S      C     C    C     C      C      C 
+sravya_w01 #csid 9 1 0 0
+sravya_w02 ref  ONE  THREE  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+sravya_w02 hyp  TWO  THREE  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+sravya_w02 op    S     C      C     C      C     C    C     C     C 
+sravya_w02 #csid 8 1 0 0
+sravya_w03 ref  ZERO  TWO  FOUR  SIX  EIGHT  FIVE  NINE  SEVEN  ONE
+sravya_w03 hyp  ZERO  TWO  FOUR  SIX   ZERO  FIVE  NINE  SEVEN  ONE
+sravya_w03 op     C    C     C    C     S      C     C     C     C 
+sravya_w03 #csid 8 1 0 0
+sravya_w04 ref  ONE  FIVE  NINE  TWO  FOUR   SIX  ZERO  SEVEN
+sravya_w04 hyp  ONE  FIVE  NINE  TWO  FOUR  FOUR  ZERO  SEVEN
+sravya_w04 op    C     C     C    C     C     S     C     C  
+sravya_w04 #csid 7 1 0 0
+sravya_w05 ref  ONE  THREE  FIVE  SIX  ZERO  EIGHT  NINE  TWO   *** 
+sravya_w05 hyp  ONE  THREE  FIVE  SIX  ZERO  EIGHT  NINE  TWO  EIGHT
+sravya_w05 op    C     C      C    C     C     C      C    C     I  
+sravya_w05 #csid 8 0 1 0
+sravya_w06 ref  TWO  THREE  NINE  FOUR  TWO  FOUR  FIVE  ZERO  SEVEN  SIX  EIGHT
+sravya_w06 hyp  TWO  THREE  NINE  FOUR  TWO  FOUR  FIVE  ZERO  SEVEN  SIX  EIGHT
+sravya_w06 op    C     C      C     C    C     C     C     C     C     C     C  
+sravya_w06 #csid 11 0 0 0
+sravya_w07 ref  ONE  THREE  TWO  FOUR  FIVE  THREE  ZERO  SIX  NINE  EIGHT  SEVEN
+sravya_w07 hyp  ONE  THREE  TWO  FOUR  FIVE  THREE  ZERO  SIX  NINE  EIGHT  SEVEN
+sravya_w07 op    C     C     C     C     C     C      C    C     C     C      C  
+sravya_w07 #csid 11 0 0 0
+sravya_w08 ref  TWO  THREE  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  ZERO
+sravya_w08 hyp  TWO  THREE  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  ZERO
+sravya_w08 op    C     C      C     C     C      C      C    C    C     C 
+sravya_w08 #csid 10 0 0 0
+sravya_w09 ref  NINE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  ONE
+sravya_w09 hyp   ONE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  ONE
+sravya_w09 op     S     C      C     C     C     C     C     C    C     C     C     C 
+sravya_w09 #csid 11 1 0 0
+sravya_w10 ref  THREE  FOUR   ***   ONE  ZERO  EIGHT  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+sravya_w10 hyp  THREE  FOUR  EIGHT  ONE  ZERO  EIGHT  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+sravya_w10 op     C      C     I     C     C     C      C     C     C     C      C     C      C 
+sravya_w10 #csid 12 0 1 0
+sudharshan_x01 ref  ZERO  ONE  TWO  THREE  FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+sudharshan_x01 hyp  ZERO  ONE  TWO  THREE  FOUR  FIVE  SIX  SEVEN   ***   NINE
+sudharshan_x01 op     C    C    C     C      C     C    C     C      D      C 
+sudharshan_x01 #csid 9 0 0 1
+sudharshan_x02 ref  ONE  THREE  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+sudharshan_x02 hyp  ONE  THREE  FIVE  SEVEN  NINE  ZERO  SIX   SIX   TWO
+sudharshan_x02 op    C     C      C     C      C     C    C     S     C 
+sudharshan_x02 #csid 8 1 0 0
+sudharshan_x03 ref  ZERO  TWO  FOUR  SIX  EIGHT  FIVE  NINE  SEVEN  ONE
+sudharshan_x03 hyp  ZERO  TWO  FOUR  SIX   ***   FIVE  NINE  SEVEN  ONE
+sudharshan_x03 op     C    C     C    C     D      C     C     C     C 
+sudharshan_x03 #csid 8 0 0 1
+sudharshan_x04 ref  ONE  FIVE  NINE  TWO  FOUR  SIX  ZERO  SEVEN
+sudharshan_x04 hyp  ONE  FIVE  NINE  TWO  FOUR  SIX  ZERO  SEVEN
+sudharshan_x04 op    C     C     C    C     C    C     C     C  
+sudharshan_x04 #csid 8 0 0 0
+sudharshan_x05 ref  ONE  THREE  FIVE  SIX  ZERO  EIGHT  NINE  TWO
+sudharshan_x05 hyp  ONE  THREE  FIVE  SIX  ZERO  EIGHT  NINE  TWO
+sudharshan_x05 op    C     C      C    C     C     C      C    C 
+sudharshan_x05 #csid 8 0 0 0
+sudharshan_x06 ref  TWO  THREE  NINE  FOUR  TWO  FOUR  FIVE  ZERO  SEVEN  SIX  EIGHT
+sudharshan_x06 hyp  TWO  THREE  NINE  FOUR  TWO  FOUR  FIVE  ZERO   ***   SIX   SIX 
+sudharshan_x06 op    C     C      C     C    C     C     C     C     D     C     S  
+sudharshan_x06 #csid 9 1 0 1
+sudharshan_x07 ref  ONE  THREE  TWO  FOUR  FIVE  THREE  ZERO  SIX  NINE  EIGHT  SEVEN
+sudharshan_x07 hyp  ONE  THREE  TWO  FOUR  FIVE  THREE  ZERO  SIX  NINE  EIGHT  SEVEN
+sudharshan_x07 op    C     C     C     C     C     C      C    C     C     C      C  
+sudharshan_x07 #csid 11 0 0 0
+sudharshan_x08 ref  TWO  THREE  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  ZERO
+sudharshan_x08 hyp  TWO  THREE  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  ZERO
+sudharshan_x08 op    C     C      C     C     C      C      C    C    C     C 
+sudharshan_x08 #csid 10 0 0 0
+sudharshan_x09 ref  NINE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  ONE
+sudharshan_x09 hyp  NINE   ***   SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  ONE
+sudharshan_x09 op     C     D      C     C     C     C     C     C    C     C     C     C 
+sudharshan_x09 #csid 11 0 0 1
+sudharshan_x10 ref  THREE  FOUR  ONE  ZERO  EIGHT  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+sudharshan_x10 hyp  THREE  FOUR  ONE  ZERO  EIGHT  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+sudharshan_x10 op     C      C    C     C     C      C     C     C     C      C     C      C 
+sudharshan_x10 #csid 12 0 0 0
+swetha_y01 ref  ZERO  ONE  TWO  THREE  FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+swetha_y01 hyp  ZERO  ONE  ***  THREE  FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+swetha_y01 op     C    C    D     C      C     C    C     C      C      C 
+swetha_y01 #csid 9 0 0 1
+swetha_y02 ref  ONE  THREE  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+swetha_y02 hyp  ONE  THREE  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+swetha_y02 op    C     C      C     C      C     C    C     C     C 
+swetha_y02 #csid 9 0 0 0
+swetha_y03 ref  ZERO  TWO  FOUR  SIX  EIGHT  FIVE  NINE  SEVEN  ONE
+swetha_y03 hyp  ZERO  TWO  FOUR  SIX  EIGHT   ***  NINE  SEVEN  ***
+swetha_y03 op     C    C     C    C     C      D     C     C     D 
+swetha_y03 #csid 7 0 0 2
+swetha_y04 ref  ONE  FIVE  NINE  TWO  FOUR  SIX  ZERO  SEVEN
+swetha_y04 hyp  ***  FIVE  NINE  TWO  FOUR  SIX  ZERO  SEVEN
+swetha_y04 op    D     C     C    C     C    C     C     C  
+swetha_y04 #csid 7 0 0 1
+swetha_y05 ref  ONE  THREE  FIVE  SIX  ZERO  EIGHT   NINE  TWO
+swetha_y05 hyp  ONE  THREE  FIVE  SIX  ZERO  EIGHT  EIGHT  TWO
+swetha_y05 op    C     C      C    C     C     C      S     C 
+swetha_y05 #csid 7 1 0 0
+swetha_y06 ref  TWO  THREE  NINE  FOUR  TWO  FOUR  FIVE  ZERO  SEVEN  SIX  EIGHT
+swetha_y06 hyp  TWO  THREE  NINE  FOUR  TWO  FOUR  FIVE  ZERO   ONE   SIX  EIGHT
+swetha_y06 op    C     C      C     C    C     C     C     C     S     C     C  
+swetha_y06 #csid 10 1 0 0
+swetha_y07 ref   ONE  THREE  TWO  FOUR  FIVE  THREE  ZERO  SIX  NINE  EIGHT  SEVEN
+swetha_y07 hyp  FIVE  THREE  TWO  FOUR  FIVE  THREE  ZERO  SIX  NINE  EIGHT  SEVEN
+swetha_y07 op     S     C     C     C     C     C      C    C     C     C      C  
+swetha_y07 #csid 10 1 0 0
+swetha_y08 ref  TWO  THREE  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE   ZERO
+swetha_y08 hyp  TWO  THREE  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  SEVEN
+swetha_y08 op    C     C      C     C     C      C      C    C    C     S  
+swetha_y08 #csid 9 1 0 0
+swetha_y09 ref  NINE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  ONE
+swetha_y09 hyp  NINE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  ONE
+swetha_y09 op     C     C      C     C     C     C     C     C    C     C     C     C 
+swetha_y09 #csid 12 0 0 0
+swetha_y10 ref  THREE  FOUR  ONE  ZERO  EIGHT  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+swetha_y10 hyp  THREE  FOUR  ONE   ***  EIGHT  SEVEN  SIX  FOUR  THREE  NINE  EIGHT   ***
+swetha_y10 op     C      C    C     D     C      C     C     C     C      S     C      D 
+swetha_y10 #csid 9 1 0 2
+vvraju_z01 ref  ZERO  ONE  TWO  THREE   ***  FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+vvraju_z01 hyp  ZERO  ***  TWO  THREE  FOUR  FOUR  FIVE  SIX  SEVEN  EIGHT  NINE
+vvraju_z01 op     C    D    C     C      I     C     C    C     C      C      C 
+vvraju_z01 #csid 9 0 1 1
+vvraju_z02 ref  ONE  THREE   ***  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+vvraju_z02 hyp  ONE  THREE  FOUR  FIVE  SEVEN  NINE  ZERO  SIX  EIGHT  TWO
+vvraju_z02 op    C     C      I     C     C      C     C    C     C     C 
+vvraju_z02 #csid 9 0 1 0
+vvraju_z03 ref  ZERO  TWO  FOUR  SIX  EIGHT  FIVE  NINE  SEVEN  ONE
+vvraju_z03 hyp  ZERO  TWO  FOUR  SIX  EIGHT  FIVE  NINE  SEVEN  ONE
+vvraju_z03 op     C    C     C    C     C      C     C     C     C 
+vvraju_z03 #csid 9 0 0 0
+vvraju_z04 ref  ONE  FIVE  NINE  TWO  FOUR  SIX  ZERO  SEVEN
+vvraju_z04 hyp  ONE  FIVE  NINE  TWO  FOUR  SIX  ZERO  SEVEN
+vvraju_z04 op    C     C     C    C     C    C     C     C  
+vvraju_z04 #csid 8 0 0 0
+vvraju_z05 ref  ONE  THREE  FIVE  SIX  ZERO  EIGHT  NINE  TWO
+vvraju_z05 hyp  ONE  THREE  FIVE  SIX  ZERO  EIGHT  NINE  TWO
+vvraju_z05 op    C     C      C    C     C     C      C    C 
+vvraju_z05 #csid 8 0 0 0
+vvraju_z06 ref  TWO  THREE  NINE  FOUR  TWO   ***  FOUR  FIVE  ZERO  SEVEN  SIX  EIGHT
+vvraju_z06 hyp  TWO  THREE  NINE  FOUR  TWO  FOUR  FOUR  FIVE  ZERO  SEVEN  SIX  EIGHT
+vvraju_z06 op    C     C      C     C    C     I     C     C     C     C     C     C  
+vvraju_z06 #csid 11 0 1 0
+vvraju_z07 ref  ONE  THREE  TWO   ***  FOUR  FIVE  THREE  ***  ZERO  SIX  NINE  EIGHT  SEVEN
+vvraju_z07 hyp  ONE  THREE  TWO  FOUR  FOUR  FIVE  THREE  SIX   TWO  SIX  NINE  EIGHT  SEVEN
+vvraju_z07 op    C     C     C     I     C     C     C     I     S    C     C     C      C  
+vvraju_z07 #csid 10 1 2 0
+vvraju_z08 ref  TWO  THREE  ***  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  ZERO
+vvraju_z08 hyp  TWO  THREE  TWO  FIVE  FOUR  EIGHT  SEVEN  NINE  SIX  ONE  ZERO
+vvraju_z08 op    C     C     I     C     C     C      C      C    C    C     C 
+vvraju_z08 #csid 10 0 1 0
+vvraju_z09 ref  NINE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN   ***   ONE
+vvraju_z09 hyp  NINE  EIGHT  SEVEN  SIX  FIVE  FOUR  THREE  TWO  ONE  ZERO  SEVEN  EIGHT  ONE
+vvraju_z09 op     C     C      C     C     C     C     C     C    C     C     C      I     C 
+vvraju_z09 #csid 12 0 1 0
+vvraju_z10 ref  THREE   ***  FOUR  ONE  ZERO  EIGHT  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+vvraju_z10 hyp  THREE  FOUR  FOUR  ONE  ZERO  THREE  SEVEN  SIX  FOUR  THREE  FIVE  EIGHT  NINE
+vvraju_z10 op     C      I     C    C     C     S      C     C     C     C      C     C      C 
+vvraju_z10 #csid 11 1 1 0

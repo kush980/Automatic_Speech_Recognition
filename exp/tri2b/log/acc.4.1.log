@@ -1,0 +1,17 @@
+# gmm-acc-stats-ali exp/tri2b/4.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri2b/4.mat ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri2b/ali.1.gz|" exp/tri2b/4.1.acc 
+# Started at Sat May  8 21:54:35 IST 2021
+#
+gmm-acc-stats-ali exp/tri2b/4.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri2b/4.mat ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri2b/ali.1.gz|' exp/tri2b/4.1.acc 
+transform-feats exp/tri2b/4.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance mounika_b10 avg. like is -64.0488 over 339 frames.
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 100 utterances, errors on 0
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -71.4175 over 71981 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 100 utterances; 0 had errors.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance sonali_d10 avg. like is -59.6367 over 316 frames.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:112) Done 100 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -50.2112 over 71981 frames.
+LOG (gmm-acc-stats-ali[5.5.916~1-7f57e]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat May  8 21:54:36 IST 2021, elapsed time 1 seconds
