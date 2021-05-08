@@ -1,0 +1,53 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/mfcc/raw_mfcc_test.1.ark,/home/kritika/Automatic_Speech_Recognition/mfcc/raw_mfcc_test.1.scp 
+# Started at Sat May  8 19:19:11 IST 2021
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/mfcc/raw_mfcc_test.1.ark,/home/kritika/Automatic_Speech_Recognition/mfcc/raw_mfcc_test.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w01
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w04
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w05
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w06
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w07
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w08
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w09
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sravya_w10
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x01
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x04
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x05
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x06
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x07
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x08
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x09
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key sudharshan_x10
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y01
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y04
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y05
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y06
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y07
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y08
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y09
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key swetha_y10
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z01
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z04
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z05
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z06
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z07
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z08
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z09
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key vvraju_z10
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:185)  Done 40 out of 40 utterances.
+LOG (copy-feats[5.5.916~1-7f57e]:main():copy-feats.cc:143) Copied 40 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat May  8 19:19:11 IST 2021, elapsed time 0 seconds

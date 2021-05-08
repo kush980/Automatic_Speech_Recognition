@@ -1,2 +1,0 @@
-compute-cmvn-stats --spk2utt=ark:data/test/d_dev//spk2utt scp:data/test/d_dev//feats.scp ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/test//cmvn_d_dev.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/test//cmvn_d_dev.scp 
-LOG (compute-cmvn-stats[5.5.916~1-7f57e]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 40 utterances; 0 had errors.
