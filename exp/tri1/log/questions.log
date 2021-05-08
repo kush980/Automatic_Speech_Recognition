@@ -1,33 +1,4 @@
 cluster-phones exp/tri1/treeacc data/lang/phones/sets.int exp/tri1/questions.int 
 WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 6 7 8 9 10 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 11 12 13 14 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 15 16 17 18 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 19 20 21 22 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 23 24 25 26 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 27 28 29 30 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 31 32 33 34 
 WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 35 36 37 38 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 39 40 41 42 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 43 44 45 46 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 47 48 49 50 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 51 52 53 54 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 55 56 57 58 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 59 60 61 62 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 63 64 65 66 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 67 68 69 70 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 71 72 73 74 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 75 76 77 78 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 79 80 81 82 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 83 84 85 86 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 87 88 89 90 
-WARNING (cluster-phones[5.5.916~1-7f57e]:AutomaticallyObtainQuestions():build-tree.cc:709) All or all but one of your classes of phones had no data. Note that we only consider data where pdf-class is in the set ( 1 ).  If you have an unusual HMM topology this may not be what you want; use the --pdf-class-list option to change this if needed. See also any warnings above.
-ASSERTION_FAILED (cluster-phones[5.5.916~1-7f57e]:ObtainSetsOfPhones():build-tree.cc:567) Assertion failed: (num_leaves < static_cast<int32>(clust_assignments.size()))
-
-[ Stack-Trace: ]
-/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xb42) [0x7f1a04f4d6f2]
-/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::KaldiAssertFailure_(char const*, char const*, int, char const*)+0x6e) [0x7f1a04f4e3ee]
-/home/kritika/kaldi/src/lib/libkaldi-tree.so(kaldi::AutomaticallyObtainQuestions(std::vector<std::pair<std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, kaldi::Clusterable*>, std::allocator<std::pair<std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, kaldi::Clusterable*> > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, std::vector<int, std::allocator<int> > const&, int, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >*)+0x22ef) [0x7f1a05676d1d]
-cluster-phones(main+0x5a7) [0x557ef83728c1]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f1a045d6bf7]
-cluster-phones(_start+0x2a) [0x557ef837223a]
-
+LOG (cluster-phones[5.5.916~1-7f57e]:main():cluster-phones.cc:129) Wrote questions to exp/tri1/questions.int
