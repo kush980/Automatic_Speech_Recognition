@@ -1,0 +1,61 @@
+# ali-to-post "ark:gunzip -c exp/tri3_ali/pre_ali.1.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split1/1/spk2utt exp/tri3/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3_ali/trans.1 
+# Started at Sat May  8 20:14:41 IST 2021
+#
+ali-to-post 'ark:gunzip -c exp/tri3_ali/pre_ali.1.gz|' ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |' ark:- ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split1/1/spk2utt exp/tri3/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3_ali/trans.1 
+transform-feats exp/tri3/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+transform-feats exp/tri3/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 24.8641 per frame over 4042 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker gangamohan, auxf-impr from fMLLR is 24.8641, over 4042 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 18.1672 per frame over 5833 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker hari, auxf-impr from fMLLR is 18.1672, over 5833 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 13.439 per frame over 4967 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker knrk, auxf-impr from fMLLR is 13.439, over 4967 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 12.1 per frame over 3177 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker malavika, auxf-impr from fMLLR is 12.1, over 3177 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 15.7312 per frame over 2966 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker mounika, auxf-impr from fMLLR is 15.7312, over 2966 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 14.7349 per frame over 5761 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker ramakrishna, auxf-impr from fMLLR is 14.7349, over 5761 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 13.2054 per frame over 4351 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker rambabu, auxf-impr from fMLLR is 13.2054, over 4351 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 16.7476 per frame over 2902 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker samyukta, auxf-impr from fMLLR is 16.7476, over 2902 frames.
+
+LOG (ali-to-post[5.5.916~1-7f57e]:main():ali-to-post.cc:73) Converted 97 alignments.
+LOG (weight-silence-post[5.5.916~1-7f57e]:main():weight-silence-post.cc:95) Done 97 posteriors.
+WARNING (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:116) Did not find posteriors for utterance shivanand_c04
+WARNING (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:116) Did not find posteriors for utterance shivanand_c08
+WARNING (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:116) Did not find posteriors for utterance shivanand_c09
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 100 utterances, errors on 0
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 20.7569 per frame over 3375 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker shivanand, auxf-impr from fMLLR is 20.7569, over 3375 frames.
+
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 100 utterances, errors on 0
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -70.1834 over 71981 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 100 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.5.916~1-7f57e]:main():gmm-post-to-gpost.cc:124) Done 97 files, 3 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.5.916~1-7f57e]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -46.9032 over 39921 frames.
+LOG (gmm-post-to-gpost[5.5.916~1-7f57e]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -70.1834 over 71981 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 100 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 13.5362 per frame over 2547 frames.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:141) For speaker sonali, auxf-impr from fMLLR is 13.5362, over 2547 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:186) Done 97 files, 3 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.5.916~1-7f57e]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 16.3773 over 39921 frames.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat May  8 20:14:42 IST 2021, elapsed time 1 seconds
