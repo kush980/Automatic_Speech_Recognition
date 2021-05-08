@@ -1,0 +1,1 @@
+sum-lda-accs exp/DNN_tri3_aligned_layer3_nodes256/lda.acc exp/DNN_tri3_aligned_layer3_nodes256/lda.1.acc 

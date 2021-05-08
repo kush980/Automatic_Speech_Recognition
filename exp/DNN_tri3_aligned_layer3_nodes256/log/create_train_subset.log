@@ -1,0 +1,33 @@
+# nnet-get-egs --left-context=4 --right-context=4 "ark,s,cs:utils/filter_scp.pl exp/DNN_tri3_aligned_layer3_nodes256/train_subset_uttlist data/train/feats.scp | apply-cmvn  --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- | splice-feats  ark:- ark:- | transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- |" "ark,s,cs:gunzip -c exp/DNN_tri3_aligned_layer3_nodes256/ali_special.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |" ark:exp/DNN_tri3_aligned_layer3_nodes256/egs/train_subset_all.egs 
+# Started at Sat May  8 20:14:45 IST 2021
+#
+nnet-get-egs --left-context=4 --right-context=4 "ark,s,cs:utils/filter_scp.pl exp/DNN_tri3_aligned_layer3_nodes256/train_subset_uttlist data/train/feats.scp | apply-cmvn  --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- | splice-feats  ark:- ark:- | transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- |" 'ark,s,cs:gunzip -c exp/DNN_tri3_aligned_layer3_nodes256/ali_special.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |' ark:exp/DNN_tri3_aligned_layer3_nodes256/egs/train_subset_all.egs 
+transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- 
+splice-feats ark:- ark:- 
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 0 utterances, errors on 0
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 0 utterances; 0 had errors.
+transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- 
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 0 utterances; 0 had errors.
+WARNING (transform-feats[5.5.916~1-7f57e]:Close():kaldi-io.cc:515) Pipe cat exp/tri3_ali/trans.*| had nonzero return status 36096
+LOG (nnet-get-egs[5.5.916~1-7f57e]:main():nnet-get-egs.cc:174) Finished generating examples, successfully processed 0 feature files, wrote 0 examples,  with 0 egs in total; 0 files had errors.
+ali-to-post ark:- ark:- 
+ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- 
+WARNING (nnet-get-egs[5.5.916~1-7f57e]:Close():kaldi-io.cc:515) Pipe gunzip -c exp/DNN_tri3_aligned_layer3_nodes256/ali_special.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- | had nonzero return status 36096
+WARNING (nnet-get-egs[5.5.916~1-7f57e]:Close():kaldi-io.cc:515) Pipe utils/filter_scp.pl exp/DNN_tri3_aligned_layer3_nodes256/train_subset_uttlist data/train/feats.scp | apply-cmvn  --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- | splice-feats  ark:- ark:- | transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- | had nonzero return status 256
+ERROR (nnet-get-egs[5.5.916~1-7f57e]:~SequentialTableReaderArchiveImpl():util/kaldi-table-inl.h:678) TableReader: error detected closing archive "utils/filter_scp.pl exp/DNN_tri3_aligned_layer3_nodes256/train_subset_uttlist data/train/feats.scp | apply-cmvn  --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- | splice-feats  ark:- ark:- | transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- |"
+
+[ Stack-Trace: ]
+/home/kritika/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xb42) [0x7ffb113896f2]
+nnet-get-egs(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x21) [0x55bc1fdc370d]
+nnet-get-egs(kaldi::SequentialTableReaderArchiveImpl<kaldi::KaldiObjectHolder<kaldi::Matrix<float> > >::~SequentialTableReaderArchiveImpl()+0x18c) [0x55bc1fdc5cd8]
+nnet-get-egs(kaldi::SequentialTableReaderArchiveImpl<kaldi::KaldiObjectHolder<kaldi::Matrix<float> > >::~SequentialTableReaderArchiveImpl()+0x9) [0x55bc1fdc5ce7]
+nnet-get-egs(kaldi::SequentialTableReader<kaldi::KaldiObjectHolder<kaldi::Matrix<float> > >::~SequentialTableReader()+0x12) [0x55bc1fdc68ee]
+nnet-get-egs(main+0x12f7) [0x55bc1fdc2921]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ffb107f3bf7]
+nnet-get-egs(_start+0x2a) [0x55bc1fdc154a]
+
+terminate called after throwing an instance of 'kaldi::KaldiFatalError'
+  what():  kaldi::KaldiFatalError
+# Accounting: time=1 threads=1
+# Ended (code 134) at Sat May  8 20:14:46 IST 2021, elapsed time 1 seconds

@@ -1,0 +1,20 @@
+# nnet-get-egs --left-context=4 --right-context=4 "ark,s,cs:utils/filter_scp.pl exp/DNN_tri3_aligned_layer3_nodes256/valid_uttlist data/train/feats.scp | apply-cmvn  --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- | splice-feats  ark:- ark:- | transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- |" "ark,s,cs:gunzip -c exp/DNN_tri3_aligned_layer3_nodes256/ali_special.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |" ark:exp/DNN_tri3_aligned_layer3_nodes256/egs/valid_all.egs 
+# Started at Sat May  8 20:14:45 IST 2021
+#
+nnet-get-egs --left-context=4 --right-context=4 "ark,s,cs:utils/filter_scp.pl exp/DNN_tri3_aligned_layer3_nodes256/valid_uttlist data/train/feats.scp | apply-cmvn  --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- | splice-feats  ark:- ark:- | transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- |" 'ark,s,cs:gunzip -c exp/DNN_tri3_aligned_layer3_nodes256/ali_special.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |' ark:exp/DNN_tri3_aligned_layer3_nodes256/egs/valid_all.egs 
+transform-feats exp/DNN_tri3_aligned_layer3_nodes256/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/utt2spk scp:data/train/cmvn.scp scp:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/utt2spk 'ark:cat exp/tri3_ali/trans.*|' ark:- ark:- 
+ali-to-post ark:- ark:- 
+ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- 
+LOG (ali-to-pdf[5.5.916~1-7f57e]:main():ali-to-pdf.cc:68) Converted 100 alignments to pdf sequences.
+LOG (ali-to-post[5.5.916~1-7f57e]:main():ali-to-post.cc:73) Converted 100 alignments.
+LOG (apply-cmvn[5.5.916~1-7f57e]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 100 utterances, errors on 0
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -70.1834 over 71981 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 100 utterances; 0 had errors.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:158) Overall average logdet is 4.68794 over 71981 frames.
+LOG (transform-feats[5.5.916~1-7f57e]:main():transform-feats.cc:161) Applied transform to 100 utterances; 0 had errors.
+LOG (nnet-get-egs[5.5.916~1-7f57e]:main():nnet-get-egs.cc:174) Finished generating examples, successfully processed 100 feature files, wrote 71981 examples,  with 71981 egs in total; 0 files had errors.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Sat May  8 20:14:47 IST 2021, elapsed time 2 seconds
