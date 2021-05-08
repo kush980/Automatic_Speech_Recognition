@@ -1,0 +1,20 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_d_dev.3.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.3 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.3.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.3.scp 
+# Started at Tue May  4 13:43:53 IST 2021
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.3 --compress=true ark:- ark,scp:/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.3.ark,/home/kritika/Automatic_Speech_Recognition/dump/mfcc_data/train/raw_mfcc_d_dev.3.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_d_dev.3.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k01
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k02
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k03
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k04
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k05
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k06
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k07
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k08
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k09
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:182) Processed features for key knrk_k10
+LOG (compute-mfcc-feats[5.5.916~1-7f57e]:main():compute-mfcc-feats.cc:185)  Done 10 out of 10 utterances.
+LOG (copy-feats[5.5.916~1-7f57e]:main():copy-feats.cc:143) Copied 10 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue May  4 13:43:53 IST 2021, elapsed time 0 seconds

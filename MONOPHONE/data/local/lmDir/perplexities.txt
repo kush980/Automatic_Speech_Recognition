@@ -1,0 +1,11 @@
+data/local/lmDir/4gram.gt0111.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.36135  ppl=  1.315234  ppl1=  1.351772
+data/local/lmDir/4gram.gt0113.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.5342   ppl=  1.316424  ppl1=  1.353117
+data/local/lmDir/4gram.gt0112.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.5342   ppl=  1.316424  ppl1=  1.353117
+data/local/lmDir/4gram.gt0123.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.70706  ppl=  1.317616  ppl1=  1.354465
+data/local/lmDir/4gram.gt0122.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.70706  ppl=  1.317616  ppl1=  1.354465
+data/local/lmDir/4gram.gt0223.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.87991  ppl=  1.318808  ppl1=  1.355813
+data/local/lmDir/4gram.gt0222.gz  file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -52.87991  ppl=  1.318808  ppl1=  1.355813
+data/local/lmDir/3gram.gt011.gz   file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -54.53851  ppl=  1.330305  ppl1=  1.36882
+data/local/lmDir/3gram.gt012.gz   file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -54.71136  ppl=  1.331509  ppl1=  1.370182
+data/local/lmDir/3gram.gt023.gz   file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -54.88422  ppl=  1.332714  ppl1=  1.371547
+data/local/lmDir/3gram.gt022.gz   file  data/local/lmDir/dev.txt:  40  sentences,  400  words,  0  OOVs  0  zeroprobs,  logprob=  -54.88422  ppl=  1.332714  ppl1=  1.371547
