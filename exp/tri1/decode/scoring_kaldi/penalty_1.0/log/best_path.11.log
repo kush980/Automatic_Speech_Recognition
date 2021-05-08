@@ -1,0 +1,92 @@
+# lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c exp/tri1/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri1/graph/words.txt | local/wer_hyp_filter > exp/tri1/decode/scoring_kaldi/penalty_1.0/11.txt 
+# Started at Sat May  8 21:51:45 IST 2021
+#
+lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c exp/tri1/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w01, best cost 60.7511 + 2464.39 = 2525.14 over 290 frames.
+sravya_w01 ZERO ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w02, best cost 55.4935 + 2300.81 = 2356.31 over 267 frames.
+sravya_w02 ONE THREE FIVE SEVEN NINE ZERO SIX EIGHT TWO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w03, best cost 55.3593 + 2392.8 = 2448.16 over 276 frames.
+sravya_w03 ZERO TWO FOUR SIX EIGHT FIVE NINE SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w04, best cost 51.1264 + 2306.95 = 2358.08 over 265 frames.
+sravya_w04 ONE FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w05, best cost 59.508 + 2313.99 = 2373.5 over 266 frames.
+sravya_w05 ONE THREE FIVE SIX ZERO EIGHT NINE TWO TWO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w06, best cost 66.9178 + 2957.11 = 3024.03 over 335 frames.
+sravya_w06 THREE THREE NINE FOUR TWO FOUR FIVE ZERO SEVEN SIX EIGHT 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w07, best cost 73.8007 + 3317.75 = 3391.55 over 390 frames.
+sravya_w07 ONE THREE TWO FOUR FIVE THREE ZERO SIX NINE EIGHT SEVEN EIGHT 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w08, best cost 59.5594 + 2966.73 = 3026.29 over 341 frames.
+sravya_w08 TWO THREE ONE FOUR SEVEN NINE SIX ONE ZERO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w09, best cost 75.1149 + 3632.22 = 3707.33 over 424 frames.
+sravya_w09 NINE EIGHT SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sravya_w10, best cost 83.2819 + 4187.31 = 4270.59 over 499 frames.
+sravya_w10 THREE FOUR ONE ZERO EIGHT SEVEN SIX FOUR THREE FOUR EIGHT NINE EIGHT 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x01, best cost 76.0866 + 3915.01 = 3991.09 over 461 frames.
+sudharshan_x01 ZERO ONE THREE FOUR FIVE SIX SEVEN NINE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x02, best cost 62.0174 + 3147.05 = 3209.07 over 370 frames.
+sudharshan_x02 ONE THREE FIVE SEVEN NINE ZERO SIX TWO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x03, best cost 69.0529 + 3610.04 = 3679.09 over 435 frames.
+sudharshan_x03 ZERO TWO FOUR SIX SEVEN NINE SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x04, best cost 57.9032 + 3137.09 = 3195 over 383 frames.
+sudharshan_x04 ONE FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x05, best cost 60.2487 + 3327.82 = 3388.07 over 409 frames.
+sudharshan_x05 ONE FIVE SIX ZERO THREE NINE TWO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x06, best cost 78.1708 + 4603.9 = 4682.07 over 562 frames.
+sudharshan_x06 TWO THREE NINE FOUR TWO FOUR FIVE ZERO SEVEN SIX 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x07, best cost 78.0773 + 4216.83 = 4294.91 over 519 frames.
+sudharshan_x07 ONE THREE TWO FOUR THREE ZERO SIX NINE EIGHT SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x08, best cost 79.0399 + 3943.08 = 4022.12 over 477 frames.
+sudharshan_x08 TWO THREE FIVE FOUR EIGHT SEVEN NINE SIX ONE ZERO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x09, best cost 86.7044 + 4249.46 = 4336.16 over 500 frames.
+sudharshan_x09 NINE THREE SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance sudharshan_x10, best cost 94.4001 + 4379.75 = 4474.15 over 536 frames.
+sudharshan_x10 THREE FOUR ONE ZERO EIGHT SEVEN SIX FOUR THREE FIVE EIGHT NINE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y01, best cost 49.2219 + 1919.18 = 1968.4 over 230 frames.
+swetha_y01 ZERO ONE THREE FOUR FIVE SEVEN EIGHT NINE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y02, best cost 55.491 + 1801.52 = 1857.01 over 220 frames.
+swetha_y02 ONE THREE FIVE SEVEN NINE ZERO SIX EIGHT FOUR 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y03, best cost 53.1185 + 1852.66 = 1905.78 over 227 frames.
+swetha_y03 ZERO TWO FOUR SIX EIGHT FIVE THREE SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y04, best cost 48.677 + 1700.97 = 1749.65 over 208 frames.
+swetha_y04 ONE FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y05, best cost 52.7821 + 1557.3 = 1610.08 over 189 frames.
+swetha_y05 ONE THREE FIVE SIX ZERO EIGHT NINE TWO NINE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y06, best cost 68.992 + 2882.87 = 2951.86 over 362 frames.
+swetha_y06 TWO THREE NINE FOUR TWO FOUR FIVE THREE ONE SIX EIGHT 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y07, best cost 63.3614 + 2045.26 = 2108.62 over 247 frames.
+swetha_y07 FIVE THREE TWO FOUR FIVE THREE ZERO SIX NINE EIGHT SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y08, best cost 59.9745 + 2032.08 = 2092.06 over 246 frames.
+swetha_y08 TWO THREE FIVE FOUR EIGHT SEVEN NINE SIX ONE ZERO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y09, best cost 66.9536 + 2159.36 = 2226.32 over 258 frames.
+swetha_y09 NINE SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance swetha_y10, best cost 55.7429 + 2100.35 = 2156.09 over 251 frames.
+swetha_y10 THREE FOUR EIGHT SEVEN SIX FOUR THREE FIVE NINE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z01, best cost 76.4639 + 4299.39 = 4375.85 over 476 frames.
+vvraju_z01 ZERO TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE 
+LOG (lattice-scale[5.5.916~1-7f57e]:main():lattice-scale.cc:107) Done 40 lattices.
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z02, best cost 73.9095 + 3377.38 = 3451.29 over 385 frames.
+vvraju_z02 ONE THREE FOUR FIVE SEVEN NINE ZERO SIX EIGHT TWO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z03, best cost 68.119 + 3365.49 = 3433.6 over 374 frames.
+vvraju_z03 ZERO TWO FOUR SIX EIGHT FIVE NINE SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z04, best cost 65.5037 + 2975.59 = 3041.09 over 340 frames.
+vvraju_z04 ONE FOUR FIVE NINE TWO FOUR SIX ZERO SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z05, best cost 58.1469 + 2824.72 = 2882.86 over 322 frames.
+vvraju_z05 ONE THREE FIVE SIX ZERO EIGHT NINE TWO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z06, best cost 91.2341 + 3881.19 = 3972.42 over 432 frames.
+vvraju_z06 TWO THREE NINE TWO FOUR TWO FOUR FOUR FIVE ZERO SEVEN SIX EIGHT 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z07, best cost 93.7037 + 3902.62 = 3996.32 over 442 frames.
+vvraju_z07 ONE THREE TWO FOUR FIVE THREE ZERO SIX NINE EIGHT SEVEN 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z08, best cost 68.6175 + 3483.71 = 3552.33 over 400 frames.
+vvraju_z08 TWO THREE FIVE FOUR EIGHT SEVEN NINE SIX ONE ZERO 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z09, best cost 87.6331 + 4070.74 = 4158.37 over 458 frames.
+vvraju_z09 NINE EIGHT SEVEN SIX FIVE FOUR THREE TWO ONE ZERO SEVEN ONE 
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:99) For utterance vvraju_z10, best cost 92.7374 + 3921.03 = 4013.76 over 439 frames.
+vvraju_z10 THREE TWO FOUR ONE ZERO THREE SEVEN SIX FOUR THREE FIVE EIGHT NINE 
+LOG (lattice-add-penalty[5.5.916~1-7f57e]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 40 lattices.
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:124) Overall cost per frame is 8.70074 = 0.18834 [graph] + 8.5124 [acoustic] over 14511 frames.
+LOG (lattice-best-path[5.5.916~1-7f57e]:main():lattice-best-path.cc:128) Done 40 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat May  8 21:51:45 IST 2021, elapsed time 0 seconds
