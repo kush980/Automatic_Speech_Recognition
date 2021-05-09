@@ -98,9 +98,9 @@ steps/decode.sh --config conf/decode.config --nj $nj --cmd "$decode_cmd" exp/tri
 echo
 echo "==== TRI2(second triphone pass) TRAINING ====="
 echo
-steps/align_si.sh --boost-silence 1.25 --nj $nj --cmd "$train_cmd" $train_dir $lang_dir $exp/tri1 $exp/tri1_ali || exit 1
+steps/align_si.sh --boost-silence 1.25 --nj $nj --cmd "$train_cmd" data/train data/lang exp/tri1 exp/tri1_ali || exit 1
 
-steps/train_lda_mllt.sh --cmd "$train_cmd" --splice-opts "--left-context=3 --right-context=3" 8000 20000 $train_dir $lang_dir $exp/tri1_ali $exp/tri2b ||exit 1
+steps/train_lda_mllt.sh --cmd "$train_cmd" --splice-opts "--left-context=3 --right-context=3" 8000 20000 data/train data/lang exp/tri1_ali exp/tri2b ||exit 1
 echo
 echo "==== TRI2 (second triphone pass) DECODING ===="
 echo
@@ -109,9 +109,9 @@ steps/decode.sh --nj "$nj" --cmd "$decode_cmd" exp/tri2b/graph data/test exp/tri
 echo
 echo "==== TRI3 (Third Triphone pass) TRAINING ===="
 echo
-steps/align_si.sh --boost-silence 1.25 --nj $nj --cmd "$train_cmd" $train_dir $lang_dir $exp/tri2b $exp/tri2b_ali || exit 1
+steps/align_si.sh --boost-silence 1.25 --nj $nj --cmd "$train_cmd" data/train data/lang exp/tri2b exp/tri2b_ali || exit 1
 
-steps/train_sat.sh --cmd "$train_cmd" 11000 25000 $train_dir $lang_dir $exp/tri2b_ali $exp/tri3b ||exit 1
+steps/train_sat.sh --cmd "$train_cmd" 11000 25000 data/train data/lang exp/tri2b_ali exp/tri3b ||exit 1
 echo 
 echo "==== TRI3 {Third triphone pass) DECODING ===="
 echo
